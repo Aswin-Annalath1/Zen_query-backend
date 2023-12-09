@@ -27,7 +27,7 @@ module.exports.getticket = async(req,res) => {
 module.exports.postticket = async(req,res) => {
     try{
         const userID = req.params.userid    //Here we take userid from url and paste with task created..
-        const ticket = await Ticket.create({         //Calling model(Todo) & storing data to schema..
+        const ticket = await Ticket.create({         //Calling model(Ticket) & storing data to schema..
             userID : userID,          //In task giving that userid taken from url
             name:req.body.name,
             query_type:req.body.query_type,
