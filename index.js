@@ -15,7 +15,7 @@ const allroutes = require('./routes/index.js')
 const app = express();
 
 app.use(cors({
-    origin : "*",  //(we are allowing accept the request from FE if given)
+    origin : "*",  //(we are allowing accept the request from FE if given..)
     credentials : true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"]
 }))
